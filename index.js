@@ -22,35 +22,6 @@ function botones(anchor) {
 
 var database = firebase.database();
 
-/*
-var InformacionGeneral = database.ref('MiWeb/InformacionGeneral/');
-
-InformacionGeneral.once('value', function(snapshot) {
-    var info = snapshot.val()
-
-    cadena=""
-    for(var i in info){
-        var elem=info[i]
-
-
-        cadena+="<li> "+"Nombre Completo: "+ elem.nombreCompleto2+"<br>"
-        cadena+="Email: "+ elem.email+"<br>"
-        cadena+="Telefono: "+ elem.telefono+"<br>"
-        cadena+="Edad: "+ elem.edad+"<br>"
-        cadena+="Direccion: "+ elem.direccion+"<br>"
-        cadena+="Disponibilidad Horaria: "+ elem.disponibilidad+"<br>"
-        cadena+="</li>"
-    }
-
-    $(".info").html(cadena)
-
-    console.log(info);
-});
-*/
-
-
-console.log("hola mundo");
-
 var InformacionGeneral = database.ref('MiWeb/InformacionGeneral/-MDqdApzpEWp9Yhwf9Bq');
 
 InformacionGeneral.once('value', function(snapshot) {
@@ -64,9 +35,6 @@ InformacionGeneral.once('value', function(snapshot) {
     $(".disponibilidad").text("Disponibilidad Horaria: " + info.disponibilidad)
 
     $(".info").html(cadena)
-
-    console.log("hola mundo");
-    console.log(info);
 });
 
 
@@ -89,8 +57,6 @@ experienciaLaboral.once('value', function(snapshot) {
       }
 
       $(".experiencia").html(cadena)
-
-      console.log(experiencia);
 });
 
 
@@ -109,10 +75,7 @@ estudios.once('value', function(snapshot) {
 
           cadena+="</li>"
       }
-      $(".formacion").html(cadena) 
-
-      console.log(formacion);
-   
+      $(".formacion").html(cadena)   
 });
 
 
@@ -133,10 +96,7 @@ idiomas.once('value', function(snapshot) {
 
           cadena+="</li>"
       }
-      $(".idioma").html(cadena) 
-
-      console.log(idioma);
-   
+      $(".idioma").html(cadena)   
 });
 
 
