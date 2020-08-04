@@ -56,11 +56,11 @@ var InformacionGeneral = database.ref('MiWeb/InformacionGeneral/-MDqdApzpEWp9Yhw
 InformacionGeneral.once('value', function(snapshot) {
     var info = snapshot.val()
 
-    $(".nombreCompleto2").text("Nombre Completo: " + info.nombreCompleto2)
-    $(".email2").text("Email: " + info.email2)
-    $(".telefono2").text("Telefono: " + info.telefono2)
-    $(".edad2").text("Edad: " + info.edad2)
-    $(".direccion2").text("Dirección: " + info.direccion2)
+    $(".nombreCompleto2").text("Nombre Completo: " + info.nombre)
+    $(".email2").text("Email: " + info.email)
+    $(".telefono2").text("Telefono: " + info.telefono)
+    $(".edad2").text("Edad: " + info.edad)
+    $(".direccion2").text("Dirección: " + info.direccion)
     $(".disponibilidad").text("Disponibilidad Horaria: " + info.disponibilidad)
 
     $(".info").html(cadena)
