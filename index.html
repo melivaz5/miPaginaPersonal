@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Melisa Vazquez</title>
+    </head>
+    <body>
+        <div class="row">
+            <div class="container-fluid cabecera">
+                <div class="col-12 botones">
+                    <input id="boton1" type="button" value="Sobre Mi">
+                    <input id="boton2" type="button" value="Experiencia Laboral">
+                    <input id="boton3" type="button" value="Formación">
+                    <input id="boton4" type="button" value="Contacto">
+    
+                    <!--
+                    <a href="#informacionPersonal">Sobre Mi</a>
+                    <a href="#experienciaLaboral">Experiencia Laboral</a>
+                    <a href="#educacion">Educacion</a>
+                    <a href="#pieDePagina">Contacto</a>
+                    -->
+                </div>
+                <h1 id="nombre">Melisa Vazquez</h1>
+            </div>
+        </div>
+
+        <div class="row toolbar">
+
+            <div class="col-12 redesSociales">            
+                <a href="mailto:melisaandreavazquez@gmail.com" target="_blank"><img src="data:image/png;base64,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"></a>
+                <a href="https://www.instagram.com/melivaz5/" target="_blank"><img src="https://mk0brandpalettefeufc.kinstacdn.com/wp-content/uploads/2018/10/Instagram-300x300.png"></a>
+                <a href="https://www.facebook.com/meli.vazquez.52" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQMOFwv6EPnglkE0t1A41UZOCaMZN4sV48GG-f91pv3KiWJF-xd&usqp=CAU"></a>
+            </div>
+
+            
+        </div>
+
+        <div class="row seccionContenedor">
+            <div class="col-12 aboutMe" id="aboutMe">
+            <p>Hola!</p>
+            <h2>Soy Melisa Vazquez, una joven con muchas ganas de aprender y perfeccionarse día a día.</h2>
+            </div>
+
+
+        </div>
+
+<!--
+        <div class="row seccionContenedor">
+            <div class="col-12 InformacionGeneral" id="InformacionGeneral">
+                <h3 id="anchor1">Sobre Mi</h3>
+                <p class="nombreCompleto2"></p>
+                <p class="edad2"></p>
+                <p class="telefono2"></p>
+                <p class="direccion2"></p>
+                <p class="email2"></p></p>
+                <p class="disponibilidad"></p></p>
+            </div>
+        </div>
+-->
+
+
+        <div class="row seccionContenedor">
+            <div class="col-12 InformacionGeneral" id="InformacionGeneral">
+                <h3 id="anchor1">Sobre Mi</h3>
+                <ul class="info">
+                    <li class="nombreCompleto2"></li>
+                    <li class="edad2"></li>
+                    <li class="telefono2"></li>
+                    <li class="direccion2"></li>
+                    <li class="email2"></li>
+                    <li class="disponibilidad"></li>
+                </ul>
+             </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="row seccionContenedor">
+            <div class="col-12 experienciaLaboral" id="experienciaLaboral">
+                <h3 id="anchor2">Experiencia Laboral</h3>
+                <ul class="experiencia">
+                    <li class="trabajo1"></li>
+                    <li class="trabajo2"></li>
+                    <li class="trabajo3"></li>
+                    <li class="trabajo4"></li>
+                    <li class="trabajo5"></li>
+                </ul>
+             </div>
+        </div>
+
+        <div class="row seccionContenedor">
+            <div class="col-12 estudios" id="estudios">
+                <h3 id="anchor3">Formación</h3>
+                <ul class="formacion">
+                    <li class="estudio1"></li>
+                    <li class="estudio2"></li>
+                    <li class="estudio3"></li>
+                    <li class="estudio4"></li>
+                    <li class="estudio5"></li>
+                    <li class="estudio6"></li>
+                    <li class="estudio7"></li>
+                    <li class="estudio8"></li>
+                </ul>
+             </div>
+        </div>
+
+
+
+        <div class="row seccionContenedor">
+            <div class="col-12 idiomas" id="idiomas">
+                <h3 id="anchor2">Idiomas</h3>
+                <ul class="idioma">
+                    <li class="idioma1"></li>
+                </ul>
+             </div>
+        </div>
+
+
+
+
+
+<ul class="FormAcad">
+</ul>
+
+<!-- 
+<div class="formularioAcademico1">
+    <p>Nuevo</p>
+    <p class="tituloAcademico1 identificador"></p>
+    <input class="academia1" placeholder="Academia"/>
+    <input class="desde1" placeholder="desde"/>
+    <input class="hasta1" placeholder="hasta"/>
+    <button class="guardarAcademia1">Guardar(editar)</button>
+</div>
+-->
+
+<div class="formularioAcademico2" style="display:none">
+    <p>Editar</p>
+    <p class="tituloAcademico identificador"></p>
+    <input class="academia" placeholder="Academia"/>
+    <input class="desde" placeholder="desde"/>
+    <input class="hasta" placeholder="hasta"/>
+    <button class="guardarAcademia">Guardar(editar)</button>
+</div>
+    
+
+        <footer>
+            <div class="pieDePagina" id="pieDePagina">
+                <h1 id="anchor4">Contacto<h1>
+                        <p class="reemplazar">Texto por defecto</p>
+                        <div class="formulario">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control name" placeholder="Nombre">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control lastName" placeholder="Apellido">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control phone" placeholder="Telefono">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" class="form-control mail" placeholder="Email">
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-primary Submit">Enviar</button>
+                            </div>
+                        </div>        
+            </div>
+        </footer>
+    
+    
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+              apiKey: "AIzaSyBjqO4DFlBxqO0Ojx4mAws4XdCrQA_yTKo",
+              authDomain: "mipaginaweb-3d2e4.firebaseapp.com",
+              databaseURL: "https://mipaginaweb-3d2e4.firebaseio.com",
+              projectId: "mipaginaweb-3d2e4",
+              storageBucket: "mipaginaweb-3d2e4.appspot.com",
+              messagingSenderId: "480670295798",
+              appId: "1:480670295798:web:cdf560e4916207ffe16ed7",
+              measurementId: "G-LG6P0G4G5N"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+          </script>
+
+        <script src="index.js"></script>
+        
+    </body>
+</html>
